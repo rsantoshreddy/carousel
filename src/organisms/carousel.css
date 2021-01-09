@@ -1,0 +1,41 @@
+.carousel__container {
+  position: relative;
+}
+.carousel__items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+.carousel__item {
+  /* border: 1px solid red; */
+  height: 0%;
+  width: 0%;
+  transition: all 1s;
+  overflow: hidden;
+}
+
+.carousel__item--next {
+  box-shadow: 5px 5px 10px grey;
+}
+.carousel__item--previous {
+  box-shadow: -5px 5px 10px grey;
+}
+.carousel__item--previous,
+.carousel__item--next {
+  height: 75%;
+  width: 30%;
+  transition: all 0.5s;
+}
+
+.carousel__item--active {
+  box-shadow: 0px 7px 45px grey;
+  height: 100%;
+  width: 40%;
+  display: inline-block;
+  border-radius: 7px;
+}
+
+.carousel__filter {
+  text-transform: capitalize;
+}

@@ -1,0 +1,93 @@
+.arrow {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: inline-block;
+  position: absolute;
+  cursor: pointer;
+  top: calc(50% - 1.25em);
+}
+.arrow:hover:before,
+.arrow:hover:after {
+  background: #999;
+}
+.arrow:before,
+.arrow:after {
+  content: '';
+  position: absolute;
+  background: #ccc7ce;
+  opacity: 0.5;
+  border-radius: 0.2rem;
+  display: block;
+}
+.arrow.left,
+.arrow.right {
+  width: 1.667em;
+}
+.arrow.left:before,
+.arrow.right:before {
+  top: 79%;
+}
+.arrow.left:after,
+.arrow.right:after {
+  bottom: 55%;
+}
+.arrow.left:before,
+.arrow.right:before,
+.arrow.left:after,
+.arrow.right:after {
+  left: -5%;
+  height: 12%;
+  width: 110%;
+}
+.arrow.up,
+.arrow.down {
+  height: 1.667em;
+}
+.arrow.up:before,
+.arrow.down:before {
+  left: 55%;
+}
+.arrow.up:after,
+.arrow.down:after {
+  right: 55%;
+}
+.arrow.up:before,
+.arrow.down:before,
+.arrow.up:after,
+.arrow.down:after {
+  top: -5%;
+  height: 110%;
+  width: 25%;
+}
+.arrow.left:before,
+.arrow.left:after {
+  transform: rotate(45deg);
+}
+.arrow.left:after {
+  transform: rotate(-45deg);
+}
+.arrow.right:before,
+.arrow.right:after {
+  transform: rotate(-45deg);
+}
+.arrow.right:after {
+  transform: rotate(45deg);
+}
+.arrow.up:before,
+.arrow.up:after {
+  transform: rotate(-45deg);
+}
+.arrow.up:after {
+  transform: rotate(45deg);
+}
+.arrow.down:before,
+.arrow.down:after {
+  transform: rotate(45deg);
+}
+.arrow.down:after {
+  transform: rotate(-45deg);
+}
+
+.arrow.right {
+  right: 0;
+}
